@@ -44,8 +44,21 @@ khởi động service:**nssm start a1-nodered**
 <img width="1819" height="969" alt="image" src="https://github.com/user-attachments/assets/e2c5782e-283c-4c92-83ea-1e352fc7d707" />   
 
 ### 2.3 Tạo CSDL trên SQL
+<img width="1305" height="364" alt="image" src="https://github.com/user-attachments/assets/4007f2af-4327-43fc-bf89-e2684d056599" />
 
+### 2.4. Cài đặt thư viện trên nodered:
+- Vào menu ≡ → Manage palette → Install
+   <img width="1269" height="437" alt="image" src="https://github.com/user-attachments/assets/23b53444-d597-4474-91bf-27fa5d1ec4c3" />
 
+  Tìm và cài các thư viện sau:
+**node-red-contrib-mssql-plus**
+**node-red-node-mysql**
+**node-red-contrib-telegrambot** 
+**node-red-contrib-moment**
+**node-red-contrib-influxdb**
+**node-red-contrib-duckdns**
+**node-red-contrib-cron-plus**
+- Sửa file **settings.js** để bật xác thực admin:
 
 
 
