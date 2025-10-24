@@ -44,32 +44,55 @@ khởi động service:**nssm start a1-nodered**
 <img width="1819" height="969" alt="image" src="https://github.com/user-attachments/assets/e2c5782e-283c-4c92-83ea-1e352fc7d707" />   
 
 ### 2.3 Tạo CSDL trên SQL
-<img width="1305" height="364" alt="image" src="https://github.com/user-attachments/assets/4007f2af-4327-43fc-bf89-e2684d056599" />
+<img width="1173" height="489" alt="image" src="https://github.com/user-attachments/assets/12a3f615-c004-4bb3-b11b-dbab2a982f92" />
+- Dữ liệu demo   
+<img width="1100" height="464" alt="image" src="https://github.com/user-attachments/assets/1890b32f-710c-41d6-bf18-13739dfa1a6b" />
+
 
 ### 2.4. Cài đặt thư viện trên nodered:
 - Vào menu ≡ → Manage palette → Install
    <img width="1269" height="437" alt="image" src="https://github.com/user-attachments/assets/23b53444-d597-4474-91bf-27fa5d1ec4c3" />
 
   Tìm và cài các thư viện sau:
-**node-red-contrib-mssql-plus**
-**node-red-node-mysql**
-**node-red-contrib-telegrambot** 
-**node-red-contrib-moment**
-**node-red-contrib-influxdb**
-**node-red-contrib-duckdns**
-**node-red-contrib-cron-plus**
+**node-red-contrib-mssql-plus**  
+**node-red-node-mysql**   
+**node-red-contrib-telegrambot**   
+**node-red-contrib-moment**   
+**node-red-contrib-influxdb**  
+**node-red-contrib-duckdns**  
+**node-red-contrib-cron-plus**     
 - Sửa file **settings.js** để bật xác thực admin:
 
+### 2.5. tạo api back-end bằng nodered:
+<img width="1405" height="504" alt="image" src="https://github.com/user-attachments/assets/a00b1eb1-de76-432e-841f-fca40cab6fd0" />
 
+- Test IPA : http://localhost:1880/timkiem?q=th%E1%BB%8B
+<img width="674" height="491" alt="image" src="https://github.com/user-attachments/assets/105b3c6e-ec50-4423-8b4e-493df9844a68" />
 
+### 2.6. Tạo giao diện front-end:
+- cấu trúc file D:\\Apache24\nguyentheduong
+- html, css, js
+  <img width="1675" height="759" alt="image" src="https://github.com/user-attachments/assets/3b5fcc5b-9b86-4ea0-9342-a26a8ed7db52" />
+- Web tra cứu học viên
+<img width="1888" height="1019" alt="image" src="https://github.com/user-attachments/assets/82410ac5-e770-4097-baa3-d2625c5081fb" />
 
+### 2.7. Nhận xét bài làm
+*1. Hiểu quá trình cài đặt phần mềm và thư viện*
+- Nắm rõ cách vô hiệu hóa IIS để tránh xung đột cổng 80 khi cài Apache.
+- Quá trình cài đặt Apache, cấu hình httpd.conf, httpd-vhosts.conf, và sử dụng file hosts để tạo domain ảo là chính xác và thực tế.
+- Việc cài đặt Node.js, Node-RED, và sử dụng NSSM để chạy Node-RED như một service là cách làm chuyên nghiệp, giúp hệ thống ổn định và tự động khởi động
+- Biết cách cài đặt thư viện Node-RED thông qua giao diện, và chỉnh sửa settings.js để thiết lập bảo mật cho admin
 
+*2. Hiểu cách sử dụng Node-RED để tạo API back-end*
 
+- Biết cách sử dụng các node cơ bản: http in, function, MSSQL, http response, và debug.
+- Flow API /timkiem được thiết kế hợp lý, có xử lý tham số, truy vấn CSDL, và trả về JSON đúng chuẩn RESTful.
+- Biết cách test API qua trình duyệt — điều này cho thấy bạn hiểu cách kiểm tra và debug hệ thống back-end.
+*3. Hiểu cách front-end tương tác với back-end*
 
-
-
-
-
+  - Biết cách tạo giao diện HTML, CSS, JS đặt đúng thư mục Apache.
+  - File JS có logic gọi API bằng fetch, xử lý JSON trả về và hiển thị kết quả — đây là cách tương tác chuẩn giữa front-end và back-end.
+  - Hiểu cách tổ chức hệ thống và định danh cá nhân hoá.
 
 
 
