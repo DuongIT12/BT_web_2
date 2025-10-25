@@ -62,6 +62,11 @@ khởi động service:**nssm start a1-nodered**
 **node-red-contrib-duckdns**  
 **node-red-contrib-cron-plus**     
 - Sửa file **settings.js** để bật xác thực admin:
+- Cấu hình đăng nhập:
+-  <img width="1067" height="256" alt="image" src="https://github.com/user-attachments/assets/ca988cea-53c9-407c-bebe-6ce68beb16ca" />  
+  
+  <img width="1805" height="905" alt="image" src="https://github.com/user-attachments/assets/f8acdf26-18ff-4a11-a126-07fd5375c8a6" />       
+
 
 ### 2.5. tạo api back-end bằng nodered:
 <img width="1405" height="504" alt="image" src="https://github.com/user-attachments/assets/a00b1eb1-de76-432e-841f-fca40cab6fd0" />
